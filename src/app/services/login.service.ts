@@ -12,6 +12,7 @@ export class LoginService {
   currentLoaderSubject :BehaviorSubject<boolean>;
 
   constructor(private http :HttpClient) { 
+    //Observable to listen when the role changes 
     this.currentUserSubject = new BehaviorSubject<any>(JSON.parse(sessionStorage.getItem("user") || "{}"));
     this.currentLoaderSubject = new BehaviorSubject<boolean>(false);
   }
