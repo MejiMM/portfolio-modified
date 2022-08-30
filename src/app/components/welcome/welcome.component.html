@@ -1,0 +1,11 @@
+<div class="welcome-container" [@out]="bye">
+    <div class="welcome" [@entranceMessage]="mess">
+        <h1>
+            <span class="bracket">[ </span>Hola 
+                <div class="word-item1" [@rotate1]="item1">mundo</div>
+                <div class="word-item2" [@rotate2]="item2">usuario</div>
+            <span class="bracket"> ]</span>
+        </h1>
+    </div>
+    <a class="btn" (click)="goodBye()">Acceder</a>
+</div>

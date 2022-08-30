@@ -1,0 +1,21 @@
+<div class="container-fluid about">
+    <div class="row justify-content-evenly">
+        <section class="col-xs-12 col-md-4 profile">
+            <h3>
+                {{user.nombre}} <span>{{user.apellido}}</span>
+            </h3>
+            <img src="../../../assets/Sin título.jpg" alt="Foto de perfil" class="profile--img">
+        </section>
+        <section class="col-xs-12 col-md-8 job">
+            <h3 class="job--title">
+                Desarrollador Web Full Stack Jr.
+            </h3>
+            <div *ngIf="loading" class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="job--description">
+                {{user.descripcion}}
+            </p>
+        </section>
+    </div>
+</div>

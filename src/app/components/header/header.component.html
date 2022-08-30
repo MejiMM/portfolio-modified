@@ -1,0 +1,18 @@
+<div *ngIf="login.currentLoaderSubject | async" class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="app-container">
+  <header class="container-fluid header--container" >
+      <nav class="nav--header d-flex justify-content-end">
+        <a class="nav--a" href="https://www.linkedin.com/in/josemmojica/" target="_blank"><img
+            src="../../../assets/linkedin-brands.svg" alt="Enlace al perfil de Linkedin" /></a>
+        <a class="nav--a ms-3" href="https://github.com/MejiMM" target="_blank"><img src="../../../assets/github.svg"
+            alt="Enlace al perfil de Github" /></a>
+      </nav>   
+  </header>
+  <app-about></app-about>
+  <app-education></app-education>
+  <app-skills></app-skills>
+  <app-projects></app-projects>
+  <app-footer></app-footer>
+</div>

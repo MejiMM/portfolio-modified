@@ -1,0 +1,9 @@
+<section class="mt-5">
+    <form [formGroup]="form" (ngSubmit)="editInfo()" class="d-flex flex-column align-items-center">
+        <textarea placeholder="Descripcion" class="mb-2"></textarea>
+        <input type="text"  formControlName="lugar" placeholder="Lugar" class="mb-2">
+        <input type="text" formControlName="titulo" placeholder="Título" class="mb-2">
+        <input type="text" formControlName="urlCert" placeholder="Certificado URL" class="mb-2">
+        <button type="submit">Editar</button>
+    </form>
+</section>

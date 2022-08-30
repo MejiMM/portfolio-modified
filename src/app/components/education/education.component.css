@@ -1,0 +1,177 @@
+.education {
+    background-image: url(src\assets\undraw_certificate_re_yadi.svg);
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    background-position: 120% 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 16px;
+}
+
+.education--h2 {
+    color: white;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.education--list {
+    padding: 0;
+    width: 100%;
+}
+
+.add {
+    color: black;
+    border: none;
+    background-color: transparent;   
+    font-size: 2.5em;
+    z-index: 10;
+    padding: 0;
+}
+
+form {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.show {
+    position: fixed;
+    top: 41%;
+    width: 90%;
+    min-height: 55vh;
+    padding: 5%;
+    margin: 0 5%;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: black;
+    box-shadow: 0px 0px 0px 4px black inset;
+    border-radius: 26px;
+    z-index: 10;
+}
+
+.education--items {    
+    position: relative;
+    border: 1px darkblue solid;
+    border-radius: 20px;
+    width: 90vw;
+    height: 220px;
+    text-align: center;
+}
+
+.btn-delete {
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    width: 8%;
+}
+
+.img--li {
+    width: 10%;
+}
+
+.education--h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+}
+
+@media screen and (min-width: 425px) {
+    .education {
+        background-position: 120% 5%;
+    }
+
+    .btn-delete {
+        width: 6%;
+    }
+
+    .add {
+        padding: 0 0 1% 0;
+    }
+
+    .show {
+        top: 42%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .education {
+        background-position: 120% 5%;
+    }
+    
+    .education--items {    
+        width: 45vw;
+        height: 45vh;
+        position: relative;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .add {
+        top: -4%;
+        right: 37%;
+        font-size: 2.8em;
+    }
+
+    .show {
+        top: 24%;
+        width: 60%;
+        height: 58vh;
+        left: 15%;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .education {
+        background-size: 55vw;
+        background-position: 90% 0;
+    }
+
+    .education--h2 {
+        font-size: 2.5rem;
+    }
+
+    .education--items {    
+        width: 30vw;
+        max-height: 35vh;
+    }   
+
+    .add {
+        font-size: 3.2em;
+        padding: 0;
+    }
+
+    .show {
+        font-size: 1.3em;
+        top: 35%;
+        width: 45%;
+        left: 23%;
+        padding: 2%;
+        height: 52vh;
+        z-index: 100;
+    }
+
+    .btn {
+        width: 30%;
+    }
+    
+}

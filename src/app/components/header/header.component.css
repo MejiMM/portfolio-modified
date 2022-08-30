@@ -1,0 +1,119 @@
+.app-container {
+    animation: header--container 1s ease 0s 1 forwards;
+}
+
+.header--container {
+    background-color: rgb(4, 4, 131);
+    color: antiquewhite;
+}
+
+.img--h2 {
+    width: 27%;
+    padding: 0;
+}
+
+.nav--header {
+    display: flex;
+    width: 20%;
+}
+
+.nav--a img {
+    width: 8vw;
+}
+
+.div--banner {
+    position: relative;
+}
+
+.div--banner h3 {
+    position: absolute;
+    width: fit-content;
+    text-align: center;
+    color: black;
+    font-size: 7vw;
+}
+
+.img--banner {
+    min-width: 100vw;
+    padding: 0;
+}
+
+.button--login {
+    width: 16%;
+    margin: 2%;
+    font-size: 90%;
+    padding: 8px 9px;
+}
+
+.custom-modal {
+    margin-left: 2%;
+}
+
+.spinner-grow {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .nav--a img {
+        width: 6vw;
+    }
+
+    .img--h2 {
+        width: 18%;
+    }
+    
+    .div--banner h3 {
+        font-size: 6vw;
+    }
+
+    .button--login {
+        margin: 0 7px;
+        width: 10%;
+        font-size: 100%;
+    }
+
+    .custom-modal {
+        margin-left: 9%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .img--h2 {
+        width: 12%;
+    }
+
+    .nav--header {
+        width: 100%;
+    }
+
+    .nav--a img {
+        width: 4vw;
+    }
+
+    .img--banner {
+        height: 89vh;
+    }
+
+    .custom-modal {
+        width: 10%;
+        margin-left: 1%;
+        z-index: 100;
+    }
+}
+
+@keyframes header--container {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,143 @@
+.about {
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 600;    
+    padding-bottom: 3%;
+    padding-right: 5%;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+    color: antiquewhite;
+    font-size: 16px;
+}
+
+.profile h3 {
+    font-size: 2em;
+}
+
+h3 span {
+    color: #23beecef;
+    font-weight: bolder;
+}
+
+.profile--img{
+    margin: 0 auto;
+    min-width: 20vw;
+    max-width: 80%;
+    border: 7px solid rgb(5, 129, 187);
+}
+
+.job {
+    color: white;
+    min-width: 220px;
+    max-width: 95%;
+    position: relative;
+}
+
+.job--title, .job--description {
+    text-align: center;
+    text-shadow: 0px 3px 12px #000000;
+}
+
+.job--title {
+    font-weight: 900;
+    margin-top: 10%;
+    text-decoration: underline;
+}
+
+.job--description {
+    min-width: 100px;
+    height: 35vh;
+    margin-bottom: 2%;
+    padding-top: 5%;
+}
+
+.isEdit, .spinner-border {
+    position: relative;
+    cursor: pointer;   
+    right: -90%;
+    top: 5%;
+}
+
+.isEdit {    
+    width: 8%;
+}
+
+.inputEdit {     
+    text-align: center;
+    width: 100%;
+    resize: none;
+    margin-top: 5%;
+}
+
+.btn {
+    position: relative;
+    left: 80%;
+}
+
+@media screen and (min-width: 375px) {
+    
+   .job--description {
+       height: 27vh;
+   }
+} 
+
+@media screen and (min-width: 768px) {
+
+    .job {
+        border-left: 5px solid rgb(22, 17, 116);
+        margin-top: 5%;
+    }
+    
+    .job--title {
+        margin-top: 20%;
+    }
+
+    .isEdit {
+        width: 6%;
+    }
+
+    .btn {
+        left: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .profile--img{
+        top: 2.5%;
+        left: 0;
+        max-width: 20%;
+    }
+
+    .job {
+        margin-top: 5%;
+    }
+
+    .job--title {
+        margin-top: 10%;
+    }
+
+    .job--description {
+        font-size: 1.5em;
+    }
+
+    .isEdit {
+        width: 4%;
+        top: 9%;
+        right: -100%;
+    }
+
+    .inputEdit {
+        font-size: 1.5em;
+        padding-top: 2%;
+    }
+
+    
+
+}

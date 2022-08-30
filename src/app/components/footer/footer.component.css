@@ -1,0 +1,21 @@
+.footer {
+    background: linear-gradient(to right, #434343, #000000);
+    min-height: 15vh;
+    margin-top: 10%;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.footer-wpp {
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer-email {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1.1em;
+}

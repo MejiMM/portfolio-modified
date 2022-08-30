@@ -1,0 +1,21 @@
+<section class="education">
+  <div class="d-flex justify-content-center align-items-center education--add">
+    <h2 class="education--h2">Educación</h2>
+    <div *ngIf="loading" class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <ul
+    class="list-unstyled d-flex flex-column flex-md-row align-items-center flex-md-wrap justify-content-md-evenly education--list">
+    <li *ngFor="let edu of educacions" class="bg-light d-flex my-2 flex-column align-items-center education--items">
+      <h3 class="py-1 education--h3">Institución</h3>
+      <img *ngIf="isLogged && !loading" class="btn-delete" (click)="deleteEducacion(edu.id)" src="../../../assets/delete.svg"
+        alt="Delete button" class="btn-delete">
+      <h4>{{ edu.lugar }}</h4>
+      <h3 class="py-1 education--h3">Título</h3>
+      <p>{{ edu.titulo }}</p>
+      <a *ngIf="edu.urlCert.length > 0" class="btn btn-dark" href="{{ edu.urlCert }}" target="_blank"
+        title="Enlace a certificado">Certificación</a>
+    </li>
+  </ul>
+</section>

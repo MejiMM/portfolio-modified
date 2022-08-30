@@ -1,0 +1,32 @@
+.welcome-container {
+    display: flex;
+	flex-direction: column;
+    width: 95vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+	overflow: hidden;
+}
+
+.welcome {
+	color: aliceblue;
+    font-size: 5.5vw;
+    animation: welcome 1s ease 0s 1 normal forwards;
+}
+
+.bracket {
+	color: black;
+}
+
+h1 {
+    position: relative;
+}
+
+.btn {
+	color: black;
+    font-size: 4.5vh;
+}
+
+.word-item1 {
+    display: inline-block;
+}
